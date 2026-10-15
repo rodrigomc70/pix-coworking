@@ -1,0 +1,124 @@
+/* Cores baseadas na sua logo */
+:root {
+    --azul: #00bfff;
+    --verde: #3cb371;
+    --cinza-escuro: #333333;
+    --cinza-claro: #f4f4f4;
+    --branco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: var(--cinza-escuro);
+}
+
+header .subtitulo {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.valor-container {
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.valor-container p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.valor-container h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--verde); /* Usando a cor verde da logo */
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: var(--branco);
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.instrucoes p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.copia-cola-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#copia-cola {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#btn-copiar {
+    background-color: var(--azul); /* Usando a cor azul da logo */
+    color: var(--branco);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-copiar:hover {
+    background-color: #009acd;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #999;
+}

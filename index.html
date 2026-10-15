@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Pix - Coworking Terapia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca para gerar o QR Code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo Coworking Terapia" class="logo">
+            <h1>Coworking Terapia</h1>
+            <p class="subtitulo">Espaços de Saúde Compartilhados</p>
+        </header>
+
+        <main>
+            <div class="valor-container">
+                <p>Valor a ser pago:</p>
+                <h2 id="valor-pix">R$ 0,00</h2>
+            </div>
+
+            <div id="qrcode"></div>
+
+            <div class="instrucoes">
+                <p>Escaneie o QR Code com o app do seu banco ou copie o código abaixo:</p>
+            </div>
+
+            <div class="copia-cola-container">
+                <input type="text" id="copia-cola" readonly value="Carregando...">
+                <button id="btn-copiar">Copiar Código</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Pagamento seguro e direto para a conta do recebedor.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
